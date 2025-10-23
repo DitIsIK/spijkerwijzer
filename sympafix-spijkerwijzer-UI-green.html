@@ -40,7 +40,8 @@
     .hidden { display:none !important; }
 
     /* Home */
-    .home-wrap { min-height: calc(100dvh - 60px); display: grid; place-items: center; padding: 24px; }
+@media (min-width: 900px) { .home-wrap { padding-top: 40px; } }
+    .home-wrap { min-height: calc(100dvh - 60px); display: grid; justify-items: center; align-items: start; padding: 24px; padding-top: 56px; }
     .home-card { max-width: 600px; width: 100%; }
     .title { font-size: 24px; font-weight: 700; margin: 0 0 6px 0; }
     .row { display: grid; grid-template-columns: 1fr; gap: 12px; }
